@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .container { max-width: 400px; margin: 0 auto; }
+        select, input { padding: 10px; margin: 5px 0; width: 100%; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Currency Converter</h2>
+
+    <label>Amount</label>
+    <!-- Added id="amount" -->
+    <input type="number" id="amount" value="1" placeholder="Enter amount">
+
+    <label>From</label>
+    <!-- Added id="currency1" -->
+    <select id="currency1" class="currency1">
+        <option value="USD" selected>USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+        <option value="CAD">CAD</option>
+    </select>
+x
+    <label>To</label>
+    <!-- Added id="currency2" -->
+    <select id="currency2" class="currency2">
+        <option value="USD">USD</option>
+        <option value="EUR" selected>EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+        <option value="CAD">CAD</option>
+    </select>
+
+    <h3>Result: <span id="value">0</span></h3>
+    <p>Rate: <span id="convrate">0</span></p>
+    
+
+</div>
+
+<script src="cooljavascript.js"></script>
+</body>
+</html>
